@@ -1,0 +1,67 @@
+:root {
+    /* --primary-color-ligth: #0ea5e9; */
+    --primary-color-ligth: #00ffff;
+    --bark-color: #0b1020;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body,
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+header {
+    background: var(--bark-color) !important;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--white);
+}
+
+.navbar-brand {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 2.5rem;
+    white-space: 1;
+    line-height: 4.5rem;
+    letter-spacing: 0.3rem;
+}
+
+.navbar-brand:hover {
+    color: var(--white);
+}
+
+.navbar-brand span {
+    color: var(--primary-color-ligth);
+    font-weight: 800;
+}
+
+.nav-link {
+    font-size: 1.8rem;
+    color: var(--white);
+    letter-spacing: 0.15rem;
+    font-weight: 500;
+    transition: all ease-in-out 300ms;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--primary-color-ligth) !important;
+}
+
+.navbar .hire-me {
+    border: 0.02rem solid var(--primary-color-ligth);
+    font-size: 1.7rem;
+    color: var(--white);
+    padding: 1rem 5rem;
+    background: transparent;
+    border-radius: 1rem;
+}
