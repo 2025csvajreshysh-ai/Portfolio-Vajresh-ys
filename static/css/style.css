@@ -1,6 +1,6 @@
 :root {
   --bg: #050b16;
-  --bg-alt: #081325;
+  --bg-alt: #07101f;
   --surface: rgba(255, 255, 255, 0.04);
   --surface-2: rgba(255, 255, 255, 0.07);
   --line: rgba(255, 255, 255, 0.12);
@@ -27,6 +27,7 @@ html {
 }
 
 body {
+  scroll-behavior: smooth;
   margin: 0;
   background-color: var(--bg) !important;
   color: var(--text) !important;
@@ -156,51 +157,33 @@ h6 {
   background-color: rgba(34, 229, 212, 0.12);
 }
 
-/* Mobile Navbar Dropdown Drawer Styling */
-@media (max-width: 991.98px) {
-  .custom-navbar {
-    background-color: #050b16 !important;
-  }
-
-  .custom-navbar .navbar-collapse {
-    background-color: #071120 !important;
-    /* Solid dark opaque container */
-    border: 1px solid rgba(34, 229, 212, 0.25) !important;
-    border-radius: 16px !important;
-    padding: 1.25rem 1rem !important;
-    margin-top: 0.85rem !important;
-    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.95) !important;
-  }
-
-  .custom-navbar .navbar-collapse .nav-link {
-    display: block;
-    padding: 0.8rem 1.2rem !important;
-    margin-bottom: 0.4rem;
-    border-radius: 10px;
-    font-size: 1rem;
-    font-weight: 500;
-    color: #9cb0cb;
-    background-color: rgba(255, 255, 255, 0.04);
-    border: 1px solid transparent;
-  }
-
-  .custom-navbar .navbar-collapse .nav-link:hover {
-    color: #ffffff;
-    background-color: rgba(255, 255, 255, 0.08);
-  }
-
-  .custom-navbar .navbar-collapse .nav-link.active {
-    color: var(--cyan) !important;
-    background-color: rgba(34, 229, 212, 0.15) !important;
-    border-color: rgba(34, 229, 212, 0.35);
-    font-weight: 600;
-  }
-}
-
 .min-vh-hero {
   min-height: calc(100vh - 80px);
   padding-top: 115px;
   padding-bottom: 60px;
+  z-index: 10;
+}
+
+.kind-glow-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+  transform: translate(-50%, 50%);
+  height: 100rem;
+  width: 100rem;
+  background: radial-gradient(#22e5d54a 0% 0%, transparent 61% 100%);
+  z-index: -1;
+}
+
+.kind-glow-2 {
+  position: absolute;
+  top: 0rem;
+  right: 0%;
+  transform: translate(50%, -50%);
+  height: 50rem;
+  width: 50rem;
+  background: radial-gradient(#22e5d54a 0% 0%, transparent 61% 100%);
+  z-index: -1;
 }
 
 .pill {
@@ -367,6 +350,8 @@ h6 {
 
 .section {
   padding: 100px 0;
+  position: relative;
+  overflow: hidden;
 }
 
 .section.alt {
@@ -399,10 +384,7 @@ h2 {
 .goal {
   border-left: 3px solid var(--cyan);
   background: linear-gradient(90deg, rgba(34, 229, 212, 0.08), transparent);
-  border-radius: 0 14px 14px 0;
-  border-top: 1px solid var(--line);
-  border-right: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
+  border-radius: 14px ;
 }
 
 .goal strong {
@@ -429,7 +411,6 @@ h2 {
 .timeline li {
   position: relative;
   padding: 1.25rem 1.4rem;
-  border: 1px solid var(--line);
   border-radius: var(--radius);
   background-color: var(--surface);
   transition: transform 0.25s, border-color 0.25s;
@@ -437,13 +418,13 @@ h2 {
 
 .timeline li:hover {
   transform: translateX(6px);
-  border-color: rgba(34, 229, 212, 0.5);
+  border-left: 3px solid var(--cyan);
 }
 
 .timeline li::before {
   content: "";
   position: absolute;
-  left: -1.75rem;
+  left: -1.3rem;
   top: 1.5rem;
   width: 12px;
   height: 12px;
@@ -481,6 +462,32 @@ h2 {
   font-size: 0.95rem;
 }
 
+.skills {
+  position: relative;
+}
+
+.kind-glow-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  height: 100rem;
+  width: 100rem;
+  background: radial-gradient(#22e5d54a 0% 0%, transparent 61% 100%);
+  z-index: -1;
+}
+
+.kind-glow-4 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(50%, 50%);
+    height: 60rem;
+    width: 60rem;
+    background: radial-gradient(#22e5d54a 0% 0%, transparent 61% 100%);
+    z-index: -5;
+}
+
 .skill-card {
   display: flex;
   flex-direction: column;
@@ -490,22 +497,30 @@ h2 {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background-color: var(--surface);
-  transition: transform 0.25s, border-color 0.25s;
+  transition: all 0.2s ease-in-out;
 }
 
+.skill-card:hover {
+  transform: translateY(6px);
+  border-color: rgba(34, 229, 212, 0.5) !important;
+  box-shadow: 0 24px 50px -24px rgba(34, 229, 212, 0.45);
+}
 
 .card-logo {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	height: 130px;
-	padding: 0.75rem;
-	background: #fff;
-	border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 130px;
+  padding: 0.75rem;
+  background: #fff;
+  border-radius: 16px;
 }
 
-.skill-meter { width: 100%; }
+.skill-meter {
+  width: 100%;
+}
+
 .skill-meter-label {
   display: flex;
   justify-content: space-between;
@@ -514,13 +529,18 @@ h2 {
   font-size: 0.78rem;
   font-weight: 600;
 }
-.skill-meter-label span:last-child { color: var(--cyan); }
+
+.skill-meter-label span:last-child {
+  color: var(--cyan);
+}
+
 .bar {
   height: 6px;
   overflow: hidden;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.1);
 }
+
 .bar i {
   display: block;
   width: 0;
@@ -533,17 +553,12 @@ h2 {
 
 
 .card-logo img {
-	display: block;
-	max-width: 100%;
-	max-height: 100%;
-	object-fit: contain;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
-.skill-card:hover {
-  transform: translateY(-6px);
-  border-color: rgba(34, 229, 212, 0.5) !important;
-  box-shadow: 0 24px 50px -24px rgba(34, 229, 212, 0.45);
-}
 
 .pro-card {
   border: 1px solid var(--line) !important;
@@ -554,20 +569,20 @@ h2 {
 }
 
 .pro-card-logo {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	height: 168px;
-	padding: 0.75rem;
-	background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 168px;
+  padding: 0.75rem;
+  background: #fff;
 }
 
 .pro-card-logo img {
-	display: block;
-	max-width: 100%;
-	max-height: 100%;
-	object-fit: contain;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 .pro-card:hover {
@@ -579,7 +594,10 @@ h2 {
 .pro-card:hover .pro-card-logo img {
   transform: scale(1.06);
 }
-.pro-card-logo img { transition: transform 0.45s ease; }
+
+.pro-card-logo img {
+  transition: transform 0.45s ease;
+}
 
 .contact-icon {
   width: 44px;
@@ -713,29 +731,11 @@ textarea.bad {
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-
-  *,
-  *::before,
-  *::after {
-    animation: none !important;
-    transition: none !important;
-  }
-
-  .reveal {
-    opacity: 1;
-    transform: none;
-  }
-
-  html {
-    scroll-behavior: auto;
-  }
-}
 
 @media (max-width: 340px) {
-    .card-logo{
-	    height: 100px;
-    }
+  .card-logo {
+    height: 100px;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -775,7 +775,7 @@ textarea.bad {
     right: 0%;
   }
 
-  
+
 }
 
 
@@ -808,4 +808,55 @@ textarea.bad {
     bottom: -2%;
     right: -4%;
   }
+}
+
+@media (max-width: 991.98px) {
+  .custom-navbar {
+    background-color: #050b16 !important;
+  }
+
+  .custom-navbar .navbar-collapse {
+    background-color: #071120 !important;
+    border: 1px solid rgba(34, 229, 212, 0.25) !important;
+    border-radius: 16px !important;
+    padding: 1.25rem 1rem !important;
+    margin-top: 0.85rem !important;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.95) !important;
+  }
+
+  .custom-navbar .navbar-collapse .nav-link {
+    display: block;
+    padding: 0.8rem 1.2rem !important;
+    margin-bottom: 0.4rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #9cb0cb;
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid transparent;
+  }
+
+  .custom-navbar .navbar-collapse .nav-link:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.08);
+  }
+
+  .custom-navbar .navbar-collapse .nav-link.active {
+    color: var(--cyan) !important;
+    background-color: rgba(34, 229, 212, 0.15) !important;
+    border-color: rgba(34, 229, 212, 0.35);
+    font-weight: 600;
+  }
+}
+
+.section-head::before {
+  position: absolute;
+  bottom: -.6rem;
+  left: 0;
+  content: '';
+  height: .15rem;
+  width: 65%;
+  background: var(--cyan);
+  max-width: text;
+  border-radius: 10px;
 }

@@ -23,7 +23,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 	<!-- Custom CSS (with version param to prevent caching) -->
-	<link rel="stylesheet" href="css/style.css?v=2">
+	<link rel="stylesheet" href="css/style.css?v=3">
 </head>
 
 <body>
@@ -73,9 +73,10 @@
 
 	<main>
 		<section class="hero position-relative d-flex align-items-center" id="home">
+			<div class="kind-glow-1"></div>
+			<div class="kind-glow-2"></div>
 			<div class="container">
 				<div class="row align-items-center g-4 g-lg-5 min-vh-hero">
-
 					<div class="col-12 col-lg-5 d-flex justify-content-center align-items-center order-1 order-lg-2">
 						<div class="hero-art reveal position-relative" aria-hidden="true">
 							<div class="ring ring-1"></div>
@@ -185,8 +186,8 @@
 		<section class="section alt" id="about">
 			<div class="container">
 				<header class="sec-head reveal mb-5">
-					<span class="all-title d-inline-flex align-items-center">
-						<i class="bi bi-person-circle me-2"></i> 01 — About
+					<span class="all-title d-inline-flex align-items-center position-relative">
+						<i class="bi bi-person-circle me-2"></i><span class="section-head">01 — About</span>
 					</span>
 					<h2>A student who builds things</h2>
 				</header>
@@ -249,11 +250,13 @@
 			</div>
 		</section>
 
-		<section class="section" id="skills">
+		<section class="section skills" id="skills">
+			<div class="kind-glow-3"></div>
+			<div class="kind-glow-4"></div>
 			<div class="container">
 				<header class="sec-head reveal mb-5">
-					<span class="all-title d-inline-flex align-items-center">
-						<i class="bi bi-tools me-2"></i> 02 — Skills
+					<span class="all-title d-inline-flex align-items-center position-relative">
+						<i class="bi bi-tools me-2"></i><span class="section-head">02 — Skills</span>
 					</span>
 					<h2>Tools I work with</h2>
 				</header>
@@ -322,9 +325,10 @@
 		<section class="section alt" id="projects">
 			<div class="container">
 				<header class="sec-head reveal mb-4">
-					<span class="all-title d-inline-flex align-items-center">
-						<i class="bi bi-code-square me-2"></i> 03 — Projects
+					<span class="all-title d-inline-flex align-items-center position-relative">
+						<i class="bi bi-code-square me-2"></i><span class="section-head">03 — Projects</span>
 					</span>
+					<h2>What i build</h2>
 				</header>
 
 				<div class="row g-4 project-grid" id="projectGrid">
@@ -373,11 +377,13 @@
 		</section>
 
 		<section class="section" id="contact">
+			<div class="kind-glow-1"></div>
+			<div class="kind-glow-2"></div>
 			<div class="container">
 				<div class="row g-5 align-items-start contact-grid">
 					<div class="col-12 col-lg-5 reveal">
-						<span class="all-title d-inline-flex align-items-center">
-							<i class="bi bi-chat-quote-fill me-2"></i> 04 — Contact
+						<span class="all-title d-inline-flex align-items-center position-relative">
+							<i class="bi bi-chat-quote-fill me-2"></i><span class="section-head" >04 — Contact</span>
 						</span>
 						<h2 class="mb-3">Let's build something together</h2>
 						<p class="lead mb-4">Have an internship, project or idea in mind? Send a message and I'll get
@@ -453,7 +459,6 @@
 		</section>
 	</main>
 
-	<!-- FOOTER -->
 	<footer class="footer py-5">
 		<div
 			class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-4 text-center text-md-start">
@@ -488,7 +493,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js"></script>
 
 	<!-- App JS -->
-	<script src="js/app.js"></script>
+	<script src="js/app.js?v=2"></script>
 </body>
 
 </html>

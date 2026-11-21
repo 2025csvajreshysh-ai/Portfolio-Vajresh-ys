@@ -7,18 +7,20 @@ const EMAILJS_SERVICE_ID = "service_or5f5xr";
 const EMAILJS_TEMPLATE_ID = "template_9ckw5ko";
 const EMAILJS_PUBLIC_KEY = "N5y8JKgrpdKsKTE4A";
 
-/* Reveal animations and skill bars. */
-const io = new IntersectionObserver((entries) => {
-  entries.forEach((e) => {
-    if (!e.isIntersecting) return;
-    e.target.classList.add("in");
-    $$(".bar i", e.target).forEach((b) => (b.style.width = b.dataset.w + "%"));
-    io.unobserve(e.target);
-  });
-}, { threshold: 0.15 });
+/* Reveal elements as they enter view; keep content visible if observers aren't supported. */
+if ("IntersectionObserver" in window) {
+  const io = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("in");
+      observer.unobserve(entry.target);
+    });
+  }, { threshold: 0.05, rootMargin: "0px 0px -40px 0px" });
 
-function observe(els) { els.forEach((el) => io.observe(el)); }
-observe($$(".reveal"));
+  $$(".reveal").forEach((el) => io.observe(el));
+} else {
+  $$(".reveal").forEach((el) => el.classList.add("in"));
+}
 
 
 const nav = $("#nav"), links = $$("#links a");
