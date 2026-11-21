@@ -1,0 +1,50 @@
+{
+  "_note": "Seed data for the database AND offline fallback for the frontend. Replace the sample projects with your real ones.",
+  "projects": [
+    {
+      "title": "Portfolio v2",
+      "summary": "This site: a vanilla JS frontend talking to a FastAPI + SQLModel backend that stores projects, skills and contact messages.",
+      "tags": ["FastAPI", "SQLModel", "JavaScript"],
+      "repo_url": "#",
+      "live_url": "#",
+      "featured": true
+    },
+    {
+      "title": "Task Tracker API",
+      "summary": "REST API with CRUD, validation and pagination for managing daily tasks, backed by SQL.",
+      "tags": ["Python", "FastAPI", "SQL"],
+      "repo_url": "#",
+      "featured": false
+    },
+    {
+      "title": "Marks Analyzer",
+      "summary": "Command-line tool that reads student marks and reports averages, toppers and grade distribution.",
+      "tags": ["C", "Python"],
+      "repo_url": "#",
+      "featured": false
+    },
+    {
+      "title": "Weather Dashboard",
+      "summary": "Responsive dashboard that fetches live forecasts and shows them as clean, animated cards.",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "repo_url": "#",
+      "live_url": "#",
+      "featured": false
+    }
+  ],
+  "skills": [
+    {"name": "Python", "category": "Programming", "level": 90},
+    {"name": "C", "category": "Programming", "level": 85},
+    {"name": "Java", "category": "Programming", "level": 50},
+
+    {"name": "HTML", "category": "Web", "level": 80},
+    {"name": "CSS", "category": "Web", "level": 85},
+    {"name": "JavaScript", "category": "Web", "level": 45},
+
+    {"name": "FastAPI", "category": "Backend & Data", "level": 65},
+    {"name": "SQL / SQLModel", "category": "Backend & Data", "level": 65},
+
+    {"name": "Problem Solving", "category": "Soft skills", "level": 90},
+    {"name": "Creativity", "category": "Soft skills", "level": 90}
+  ]
+}

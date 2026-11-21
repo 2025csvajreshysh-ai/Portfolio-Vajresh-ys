@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Vajresh Y S — Frontend Developer &amp; CS Student</title>
+	<meta name="description"
+		content="Portfolio of Vajresh Y S: CS student building modern web apps with HTML, CSS, JavaScript, Python and FastAPI.">
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+		rel="stylesheet">
+
+	<!-- Bootstrap 5 CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+	<!-- Bootstrap Icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+	<!-- Custom CSS (with version param to prevent caching) -->
+	<link rel="stylesheet" href="css/style.css?v=2">
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg fixed-top custom-navbar" id="nav">
+			<div class="container">
+				<a class="navbar-brand logo d-flex align-items-center gap-2" href="#home">
+					<i class="bi bi-code-slash text-cyan"></i>
+					<span>VAJRESH<span class="text-cyan"> Y S</span></span>
+				</a>
+
+				<button class="navbar-toggler custom-toggler border-0 shadow-none p-2" type="button"
+					data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent"
+					aria-expanded="false" aria-label="Toggle navigation" id="burger">
+					<i class="bi bi-list text-light"></i>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarContent">
+					<div class="navbar-nav mx-auto mb-2 mb-lg-0 links" id="links" aria-label="Primary">
+						<a class="nav-link active px-3" href="#home">Home</a>
+						<a class="nav-link px-3" href="#about">About</a>
+						<a class="nav-link px-3" href="#skills">Skills</a>
+						<a class="nav-link px-3" href="#projects">Projects</a>
+						<a class="nav-link px-3" href="#contact">Contact</a>
+					</div>
+
+					<!-- Desktop Hire Me Button -->
+					<div class="d-none d-lg-flex align-items-center gap-3">
+						<a href="#contact" class="btn btn-sm btn-ghost d-inline-flex align-items-center gap-2">
+							<span>Hire me</span>
+							<i class="bi bi-send-fill text-cyan"></i>
+						</a>
+					</div>
+
+					<!-- Mobile Hire Me Button inside drawer -->
+					<div class="d-lg-none mt-3 pt-3 border-top border-secondary-subtle">
+						<a href="#contact"
+							class="btn btn-primary w-100 d-inline-flex justify-content-center align-items-center gap-2 py-2">
+							<span>Hire me</span>
+							<i class="bi bi-send-fill"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<section class="hero position-relative d-flex align-items-center" id="home">
+			<div class="container">
+				<div class="row align-items-center g-4 g-lg-5 min-vh-hero">
+
+					<div class="col-12 col-lg-5 d-flex justify-content-center align-items-center order-1 order-lg-2">
+						<div class="hero-art reveal position-relative" aria-hidden="true">
+							<div class="ring ring-1"></div>
+							<div class="ring ring-2"></div>
+							<div class="avatar"><span>V</span></div>
+							<div class="chip c1 d-inline-flex align-items-center gap-2">
+								<i class="bi bi-code-slash text-cyan"></i> HTML · CSS
+							</div>
+							<div class="chip c2 d-inline-flex align-items-center gap-2">
+								<i class="bi bi-filetype-py text-warning"></i> Python
+							</div>
+							<div class="chip c3 d-inline-flex align-items-center gap-2">
+								<i class="bi bi-lightning-charge-fill text-cyan"></i> FastAPI
+							</div>
+							<div class="chip c4 d-inline-flex align-items-center gap-2">
+								<i class="bi bi-database text-blue"></i> SQL
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="col-12 col-lg-7 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start hero-copy reveal order-2 order-lg-1">
+						<span class="pill d-inline-flex align-items-center align-self-center align-self-lg-start mb-3">
+							<i class="dot me-2"></i> Open to opportunities
+						</span>
+						<p class="hello mb-1">Hello, I'm</p>
+						<h1 class="name mb-2">Vajresh <span class="grad">Y S</span></h1>
+						<p class="head-p">Creative Thinker | <span class="text-cyan">Frontend Developer</span> | CS
+							Student</p>
+						<p class="lead mb-4 mx-auto mx-lg-0">I build modern, fast websites and the APIs behind them.
+							Computer Science student who
+							loves clean code, real projects and learning something new every week.</p>
+
+						<div
+							class="cta d-flex flex-wrap justify-content-center justify-content-lg-start align-items-center gap-3 mb-4">
+							<a href="#projects" class="btn btn-primary d-inline-flex align-items-center gap-2">
+								<span>View projects</span>
+								<i class="bi bi-arrow-right"></i>
+							</a>
+							<a href="resume.pdf" class="btn btn-ghost d-inline-flex align-items-center gap-2" download>
+								<i class="bi bi-download"></i>
+								<span>Download resume</span>
+							</a>
+						</div>
+
+						<div
+							class="socials d-flex justify-content-center justify-content-lg-start align-items-center gap-2">
+							<a href="https://github.com" target="_blank" rel="noopener"
+								class="d-inline-flex align-items-center justify-content-center" aria-label="GitHub"
+								title="GitHub">
+								<i class="bi bi-github fs-5"></i>
+							</a>
+							<a href="https://linkedin.com" target="_blank" rel="noopener"
+								class="d-inline-flex align-items-center justify-content-center" aria-label="LinkedIn"
+								title="LinkedIn">
+								<i class="bi bi-linkedin fs-5"></i>
+							</a>
+							<a href="https://twitter.com" target="_blank" rel="noopener"
+								class="d-inline-flex align-items-center justify-content-center" aria-label="X / Twitter"
+								title="X">
+								<i class="bi bi-twitter-x fs-5"></i>
+							</a>
+							<a href="mailto:your-email@example.com"
+								class="d-inline-flex align-items-center justify-content-center" aria-label="Email"
+								title="Email">
+								<i class="bi bi-envelope-fill fs-5"></i>
+							</a>
+						</div>
+					</div>
+
+					<!-- <div class="col-12 mt-4 order-3">
+						<div class="stats reveal row g-0">
+							<div class="col-6 col-md-3 d-flex flex-column p-4 border-end border-bottom border-md-bottom-0">
+								<span class="d-flex align-items-center gap-2 mb-1">
+									<i class="bi bi-mortarboard-fill text-cyan"></i>
+									<strong>B.E. CSE</strong>
+								</span>
+								<span>Current course</span>
+							</div>
+							<div class="col-6 col-md-3 d-flex flex-column p-4 border-end-md border-bottom border-md-bottom-0">
+								<span class="d-flex align-items-center gap-2 mb-1">
+									<i class="bi bi-calendar-check-fill text-cyan"></i>
+									<strong>2025 – 2029</strong>
+								</span>
+								<span>Graduating batch</span>
+							</div>
+							<div class="col-6 col-md-3 d-flex flex-column p-4 border-end">
+								<span class="d-flex align-items-center gap-2 mb-1">
+									<i class="bi bi-stack text-cyan"></i>
+									<strong>6+</strong>
+								</span>
+								<span>Languages &amp; tools</span>
+							</div>
+							<div class="col-6 col-md-3 d-flex flex-column p-4">
+								<span class="d-flex align-items-center gap-2 mb-1">
+									<i class="bi bi-terminal-split text-cyan"></i>
+									<strong>Full-stack</strong>
+								</span>
+								<span>Career direction</span>
+							</div>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</section>
+
+		<section class="section alt" id="about">
+			<div class="container">
+				<header class="sec-head reveal mb-5">
+					<span class="all-title d-inline-flex align-items-center">
+						<i class="bi bi-person-circle me-2"></i> 01 — About
+					</span>
+					<h2>A student who builds things</h2>
+				</header>
+
+				<div class="row g-5 align-items-start about-grid">
+					<div class="col-12 col-lg-6 about-text reveal">
+						<p>Hello! I'm a Computer Science student who loves building modern web applications and learning
+							new technologies. I enjoy solving real-world problems through clean, efficient code and
+							continuously challenge myself with projects that help me grow as a developer.</p>
+
+						<div class="goal d-flex flex-column p-4">
+							<div class="d-flex align-items-center gap-2 mb-2">
+								<i class="bi bi-bullseye text-cyan fs-5"></i>
+								<strong>My goal</strong>
+							</div>
+							<p class="mb-0">To crack a job at a multinational company, a high-paying role that lets me
+								leverage my
+								skills and keep growing professionally.</p>
+						</div>
+					</div>
+
+					<div class="col-12 col-lg-6">
+						<ol class="timeline list-unstyled ps-4 mb-0 position-relative">
+							<li class="reveal mb-3">
+								<span class="t-year d-inline-flex align-items-center gap-1">
+									<i class="bi bi-calendar3"></i> 2023 – 2025
+								</span>
+								<div class="mt-1">
+									<h3 class="d-flex align-items-center gap-2">
+										<i class="bi bi-book text-muted"></i> School
+									</h3>
+									<p>Completed schooling with a focus on Science and Mathematics.</p>
+								</div>
+							</li>
+							<li class="reveal now mb-3">
+								<span class="t-year d-inline-flex align-items-center gap-1">
+									<i class="bi bi-calendar3"></i> 2025 – 2029
+								</span>
+								<div class="mt-1">
+									<h3 class="d-flex align-items-center gap-2">
+										<i class="bi bi-mortarboard text-muted"></i> College <em>· now</em>
+									</h3>
+									<p>Pursuing B.E. in Computer Science &amp; Engineering.</p>
+								</div>
+							</li>
+							<li class="reveal">
+								<span class="t-year d-inline-flex align-items-center gap-1">
+									<i class="bi bi-calendar3"></i> 2029 +
+								</span>
+								<div class="mt-1">
+									<h3 class="d-flex align-items-center gap-2">
+										<i class="bi bi-rocket-takeoff text-muted"></i> Future
+									</h3>
+									<p>Software Engineer / Full-Stack Developer.</p>
+								</div>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section" id="skills">
+			<div class="container">
+				<header class="sec-head reveal mb-5">
+					<span class="all-title d-inline-flex align-items-center">
+						<i class="bi bi-tools me-2"></i> 02 — Skills
+					</span>
+					<h2>Tools I work with</h2>
+				</header>
+
+				<div class="row g-4 skill-grid" id="skillGrid">
+					<div class="col-6 col-md-4 col-lg-2">
+						<div class="skill-card p-3">
+							<div class="card-logo">
+								<img src="/portfolio/static/images/HTML.jpg" alt="HTML" loading="lazy">
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-2">
+						<div class="skill-card p-3">
+							<div class="card-logo">
+								<img src="/portfolio/static/images/CSS.jpg" alt="CSS" loading="lazy">
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-2">
+						<div class="skill-card p-3">
+							<div class="card-logo">
+								<img src="/portfolio/static/images/JS.jpg" alt="JavaScript" loading="lazy">
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-2">
+						<div class="skill-card p-3">
+							<div class="card-logo">
+								<img src="/portfolio/static/images/python.jpg" alt="Python" loading="lazy">
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-2">
+						<div class="skill-card p-3">
+							<div class="card-logo">
+								<img src="/portfolio/static/images/Fastapi.jpg" alt="FastAPI" loading="lazy">
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-2">
+						<div class="skill-card p-3">
+							<div class="card-logo">
+								<img src="/portfolio/static/images/MySQL.jpg" alt="MySQL" loading="lazy">
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-2">
+						<div class="skill-card p-3">
+							<div class="card-logo">
+								<img src="/portfolio/static/images/java.jpg" alt="Java" loading="lazy">
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-2">
+						<div class="skill-card p-3">
+							<div class="card-logo">
+								<img src="/portfolio/static/images/c.jpg" alt="C" loading="lazy">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section alt" id="projects">
+			<div class="container">
+				<header class="sec-head reveal mb-4">
+					<span class="all-title d-inline-flex align-items-center">
+						<i class="bi bi-code-square me-2"></i> 03 — Projects
+					</span>
+				</header>
+
+				<div class="row g-4 project-grid" id="projectGrid">
+					<div class="col-12 col-md-6 col-lg-6">
+						<div class="pro-card">
+							<div class="pro-card-logo">
+								<img src="/portfolio/static/images/c.jpg" alt="C" loading="lazy">
+							</div>
+							<div class="d-flex flex-row align-self-center">
+								<div class="card-details p-3">
+									<h5>ORi</h5>
+									<p class="m-0">bm</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-6">
+						<div class="pro-card">
+							<div class="pro-card-logo">
+								<img src="/portfolio/static/images/c.jpg" alt="C" loading="lazy">
+							</div>
+							<div class="card-details p-3">
+								<h5>ORi</h5>
+								<p class="m-0">bm</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section" id="contact">
+			<div class="container">
+				<div class="row g-5 align-items-start contact-grid">
+					<div class="col-12 col-lg-5 reveal">
+						<span class="all-title d-inline-flex align-items-center">
+							<i class="bi bi-chat-quote-fill me-2"></i> 04 — Contact
+						</span>
+						<h2 class="mb-3">Let's build something together</h2>
+						<p class="lead mb-4">Have an internship, project or idea in mind? Send a message and I'll get
+							back to you.</p>
+
+						<ul class="contact-list list-unstyled d-flex flex-column gap-3 mb-0">
+							<li class="d-flex align-items-center gap-3">
+								<span class="contact-icon d-flex align-items-center justify-content-center">
+									<i class="bi bi-envelope-at-fill text-cyan fs-5"></i>
+								</span>
+								<span>vajreshys2007@gmail.com</span>
+							</li>
+							<li class="d-flex align-items-center gap-3">
+								<span class="contact-icon d-flex align-items-center justify-content-center">
+									<i class="bi bi-geo-alt-fill text-cyan fs-5"></i>
+								</span>
+								<span>Mandya, Karnataka</span>
+							</li>
+							<li class="d-flex align-items-center gap-3">
+								<span class="contact-icon d-flex align-items-center justify-content-center">
+									<i class="bi bi-clock-history text-cyan fs-5"></i>
+								</span>
+								<span>Usually replies within a day</span>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-12 col-lg-7 reveal">
+						<form class="form d-flex flex-column gap-3 p-4 p-md-5" id="contactForm" novalidate>
+							<div class="row g-3">
+								<div class="col-12 col-md-6">
+									<label class="d-flex flex-column gap-2">
+										<span class="d-flex align-items-center gap-2">
+											<i class="bi bi-person text-cyan"></i> Name
+										</span>
+										<input name="name" type="text" placeholder="Your name" autocomplete="name"
+											required>
+									</label>
+								</div>
+								<div class="col-12 col-md-6">
+									<label class="d-flex flex-column gap-2">
+										<span class="d-flex align-items-center gap-2">
+											<i class="bi bi-envelope text-cyan"></i> Email
+										</span>
+										<input name="email" type="email" placeholder="you@example.com"
+											autocomplete="email" required>
+									</label>
+								</div>
+							</div>
+
+							<label class="d-flex flex-column gap-2">
+								<span class="d-flex align-items-center gap-2">
+									<i class="bi bi-chat-left-text text-cyan"></i> Message
+								</span>
+								<textarea name="message" rows="5" placeholder="Tell me about your idea…"
+									required></textarea>
+							</label>
+
+							<input class="hp d-none" name="website" type="text" tabindex="-1" autocomplete="off"
+								aria-hidden="true">
+
+							<p class="form-msg mb-0" id="formMsg" role="status"></p>
+
+							<button class="btn btn-primary d-inline-flex align-items-center gap-2 align-self-start"
+								type="submit" id="sendBtn">
+								<span>Send message</span>
+								<i class="bi bi-send-fill"></i>
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- FOOTER -->
+	<footer class="footer py-5">
+		<div
+			class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-4 text-center text-md-start">
+			<div>
+				<div class="d-flex align-items-center justify-content-center justify-content-md-start gap-2 mb-1">
+					<i class="bi bi-code-slash text-cyan fs-5"></i>
+					<strong class="fs-5">VAJRESH Y S</strong>
+				</div>
+				<p class="mb-0 text-muted">Frontend Developer · <em>CS Student</em> · Creative Thinker</p>
+			</div>
+
+			<nav class="d-flex flex-wrap justify-content-center gap-3" aria-label="Footer">
+				<a href="#home">Home</a>
+				<a href="#about">About</a>
+				<a href="#skills">Skills</a>
+				<a href="#projects">Projects</a>
+				<a href="#contact">Contact</a>
+			</nav>
+
+			<small>© <span id="year"></span> Vajresh Y S</small>
+		</div>
+	</footer>
+
+	<!-- Toast Notification -->
+	<div class="toast position-fixed" id="toast" role="status"></div>
+
+	<!-- Bootstrap 5 Bundle JS (Includes Popper) -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js"></script>
+
+	<!-- App JS -->
+	<script src="js/app.js"></script>
+</body>
+
+</html>
