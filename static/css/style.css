@@ -107,6 +107,7 @@ h6 {
 }
 
 .custom-navbar {
+  width: 100dvw !important;
   padding: 0.85rem 0;
   background-color: #050b16 !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important;
@@ -859,4 +860,8 @@ textarea.bad {
   background: var(--cyan);
   max-width: text;
   border-radius: 10px;
+}
+
+section {
+  overflow: hidden;
 }
