@@ -865,3 +865,7 @@ textarea.bad {
 section {
   overflow: hidden !important;
 }
+
+nav {
+  width: 100% !important;
+}
