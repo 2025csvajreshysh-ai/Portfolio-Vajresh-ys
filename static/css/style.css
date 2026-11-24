@@ -863,5 +863,5 @@ textarea.bad {
 }
 
 section {
-  overflow: hidden;
+  overflow: hidden !important;
 }
