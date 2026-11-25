@@ -502,7 +502,7 @@ h2 {
 }
 
 .skill-card:hover {
-  transform: translateY(6px);
+  transform: translateY(-6px);
   border-color: rgba(34, 229, 212, 0.5) !important;
   box-shadow: 0 24px 50px -24px rgba(34, 229, 212, 0.45);
 }
